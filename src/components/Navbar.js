@@ -26,7 +26,11 @@ const Navbar = () => {
               <li className="nav-item"><Link className="nav-link" aria-current="page" to="health">Health</Link></li>
               <li className="nav-item"><Link className="nav-link" aria-current="page" to="sports">Sports</Link></li>
               <li className="nav-item"><Link className="nav-link" aria-current="page" to="technology">Technology</Link></li>
+              <li className="nav-item"><Link className="nav-link" aria-current="page" to="Login">Login</Link></li>
+              <li className="nav-item"><Link className="nav-link" aria-current="page" to="Registration">Registration</Link></li>
+
             </ul>
+            <Button className='nav-item text text-white'><Link className='nav-link' aria-current="page" to="Logout">Logout</Link></Button>
             {/* <form className="d-flex ">
               <button className="disabled = true btn btn-style" type="signup">Sign up</button>
               <button className="disabled = true btn btn-style" type="login">Log in</button>

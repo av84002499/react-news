@@ -5,16 +5,21 @@ import "./index.css";
 import LoadingBar from "react-top-loading-bar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-
+import { Login } from "./Pages/Login";
+import { Registration } from "./Pages/Registration";
 const App = () => {
   const [progress, setProgress] = useState(0);
 
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <LoadingBar color="#f11946" progress={progress} />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+      <Route path="/Home" element={<Home />}></Route>
+
+        <Route path="/" element={<Login />}></Route>
+        <Route path="/Registration" element={<Registration />}></Route>
+        
         <Route
           exact
           path="/business"
